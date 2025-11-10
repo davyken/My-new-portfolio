@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
@@ -23,12 +24,10 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src={data.img} alt={data.title} />
                 <h3 className="po_title">{data.title}</h3>
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
+                <p className="po_desc">{data.description}</p>
+                <Link to={`/portfolio/${i}`}>Read More</Link>
               </div>
             );
           })}

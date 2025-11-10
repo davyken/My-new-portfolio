@@ -1,3 +1,14 @@
+import chatImg from './assets/images/Screenshot from 2025-11-10 12-54-42.png';
+import recruitmentImg from './assets/images/Screenshot from 2025-08-28 13-59-15.png';
+import canvasImg from './assets/images/canvas.png';
+import ifcmImg from './assets/images/Screenshot from 2025-11-10 13-07-13.png';
+import greatRiftImg from './assets/images/Screenshot from 2025-11-10 13-20-32.png';
+import realEstateImg from './assets/images/Screenshot from 2025-11-10 13-18-21.png';
+import logisticsImg from './assets/images/Screenshot from 2025-11-10 13-16-57.png';
+import constructionImg from './assets/images/Screenshot from 2025-11-10 13-15-33.png';
+import travelImg from './assets/images/Screenshot from 2025-11-10 13-10-41.png';
+import foundationImg from './assets/images/Screenshot from 2025-11-10 13-13-16.png';
+
 const logotext = "DAVY";
 const meta = {
     title: "Davy ",
@@ -73,76 +84,76 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400",
+        img: chatImg,
         title: "Chat Application",
-        description: "A real-time chat platform built with React.js, Node.js, and MongoDB, featuring live messaging, user authentication, and a responsive interface.",
-        link: "#",
+        description: "🗨️ Chat Application\n\nTechnologies: React.js, Node.js, Express.js, MongoDB, Socket.io\n\nA real-time chat platform designed for smooth communication between users. The app supports instant messaging, user authentication, online/offline status detection, and message persistence using MongoDB.\n\nThe frontend, built in React.js, delivers a responsive interface with seamless chat transitions, while the backend (Node.js + Express + Socket.io) handles live connections and secure message delivery.\n\nThis project demonstrates expertise in real-time data handling, WebSockets, and secure fullstack architecture.",
+        link: "https://github.com/davyken/chat-n",
     },
     {
         img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400",
         title: "Voting Platform",
-        description: "An online voting system developed using React and Node.js with MongoDB, allowing users to create polls, cast votes, and visualize results securely and efficiently.",
-        link: "#",
+        description: "🗳️ Voting Platform\n\nTechnologies: React.js, Node.js, Express.js, MongoDB, JWT Authentication\n\nAn online voting and polling platform allowing users to create, manage, and participate in polls. The app provides features like user registration, vote tracking, real-time result visualization, and poll analytics.\n\nThe system uses JWT authentication for secure login, MongoDB for data storage, and React for an intuitive user experience.\n\nIt highlights my skills in secure user management, backend logic design, and data-driven UI development.",
+        link: "https://github.com/davyken/dvote-client",
     },
     {
         img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400",
         title: "E-Commerce Website",
-        description: "A full-featured shopping platform built with React, Node.js, and MongoDB, including product management, secure checkout, and order tracking.",
-        link: "#",
+        description: "🛍️ E-Commerce Website\n\nTechnologies: React.js, Node.js, Express.js, MongoDB, Stripe API, JWT Auth\n\nA complete e-commerce solution supporting product listings, shopping carts, user authentication, order tracking, and secure online payments.\n\nBuilt with the MERN stack, it integrates the Stripe API for payment processing, MongoDB for product and order data, and JWT for session security.\n\nThe system includes admin dashboards for managing inventory and tracking sales, demonstrating strong skills in API integration, state management, and backend scalability.",
+        link: "https://online-marketplace-client.onrender.com",
     },
     {
-        img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+        img: recruitmentImg,
         title: "Recruitment Platform",
-        description: "A job-matching web app using React and Supabase, connecting candidates with employers through intelligent filtering and user-friendly dashboards.",
-        link: "#",
+        description: "💼 Recruitment Platform\n\nTechnologies: React.js, Supabase, Node.js, Tailwind CSS\n\nA web-based recruitment and job-matching platform connecting candidates with employers.\n\nBuilt using React.js for the UI and Supabase for authentication, database management, and file storage. The app allows candidates to upload CVs, apply for jobs, and receive personalized recommendations.\n\nEmployers can post jobs, review applications, and manage listings through an intuitive dashboard.\n\nThis project demonstrates experience in modern backend-as-a-service (BaaS), authentication, and real-time database interactions.",
+        link: "https://github.com/davyken/Job-Fusion",
     },
     {
-        img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400",
+        img: canvasImg,
         title: "Virtual Canvas Board",
-        description: "An interactive whiteboard application created with Next.js and NestJS, powered by MongoDB, allowing users to draw, collaborate, and share ideas in real time.",
-        link: "#",
+        description: "🧠 Virtual Canvas Board\n\nTechnologies: Next.js, NestJS, MongoDB, WebSockets, Canvas API\n\nAn interactive whiteboard app that allows multiple users to draw, collaborate, and share in real time.\n\nThe frontend, built with Next.js, integrates the Canvas API for drawing tools, colors, and shapes, while the backend (NestJS + WebSockets) ensures real-time synchronization between users.\n\nThe project focuses on real-time event handling, state management, and collaborative UI synchronization, ideal for remote teamwork and brainstorming tools.",
+        link: "https://github.com/davyken/visual-brainstorm-canvas",
     },
     {
-        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+        img: ifcmImg,
         title: "IFCM Website",
-        description: "A modern institutional website built with pure JavaScript, focusing on simplicity, speed, and a clean responsive layout.",
-        link: "#",
+        description: "🌐 IFCM Website\n\nTechnologies: HTML, CSS, JavaScript (Vanilla JS)\n\nA professional institutional website built with pure JavaScript, focusing on simplicity, lightweight performance, and accessibility.\n\nThe website includes dynamic sections, smooth scrolling, and responsive layouts — all implemented without frameworks.\n\nThis project demonstrates a strong command of core web technologies and frontend performance optimization.",
+        link: "https://ifcministriesintl.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
+        img: greatRiftImg,
         title: "Great Rift Consultancy",
-        description: "The central hub of Great Rift Consultancy, this website presents the company's mission, values, and diverse business divisions. It highlights the organization's commitment to innovation, excellence, and impact across multiple sectors — from real estate to logistics and travel. The platform provides a professional overview, seamless navigation, and a unified brand identity that connects all subsidiary websites under one corporate vision.",
-        link: "#",
+        description: "🌍 Corporate Websites for Great Rift Consultancy Group\n\nI developed a full suite of websites for Great Rift Consultancy, a multidisciplinary organization operating across several sectors.\nEach site is fully responsive, SEO-optimized, and designed to align with the company’s visual identity while serving specific industry needs.\n\n🧾 GreatRiftConsultancy.com\n\nTechnologies: React.js, Node.js, Tailwind CSS, MongoDB\n\nThe main corporate website that unifies the Great Rift brand. It presents the company’s vision, mission, and service portfolio, connecting visitors to its subsidiaries.\n\nFeatures include a modern landing page, animated sections, service overviews, and contact integration.\n\nFocused on corporate branding, responsive UI, and content-driven architecture.",
+        link: "https://davyken.github.io/GreatriftConsultancy.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400",
+        img: realEstateImg,
         title: "Great Rift Consultancy Real Estate",
-        description: "A modern, responsive platform dedicated to Great Rift Consultancy's real estate operations. It showcases property listings, investment opportunities, and development projects, allowing clients to explore, inquire, and connect with property experts. Designed for clarity and trust, it reflects the company's focus on quality housing, sustainable development, and professional real estate management.",
-        link: "#",
+        description: "🏠 GreatRiftConsultancyRealEstate.com\n\nTechnologies: React.js, Node.js, MongoDB, Cloudinary (for image hosting)\n\nA dynamic real estate platform featuring property listings, image galleries, and inquiry forms.\n\nIt allows clients to browse properties, filter by location or price, and connect with agents.\n\nDesigned for property data management, responsive design, and media optimization.",
+        link: "https://davyken.github.io/GreatriftConsultancyRealestate.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400",
+        img: logisticsImg,
         title: "Great Rift Consultancy Logistics",
-        description: "This platform highlights Great Rift Consultancy's logistics and supply chain services, including transportation, warehousing, and distribution solutions. Built with a sleek, business-oriented interface, the website emphasizes reliability, efficiency, and tailored logistics strategies that help businesses move goods faster and smarter across regions.",
-        link: "#",
+        description: "🚛 GreatRiftConsultancyLogistics.com\n\nTechnologies: React.js, Node.js, Express.js\n\nA logistics and supply chain management website showcasing Great Rift’s transportation, warehousing, and delivery solutions.\n\nIt integrates service forms, tracking features, and an intuitive dashboard for business clients.\n\nHighlights expertise in corporate service design, API integration, and scalable backend development.",
+        link: "https://davyken.github.io/GreatriftConsultancyLogistics.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400",
+        img: constructionImg,
         title: "Great Rift Consultancy Construction",
-        description: "The construction arm of Great Rift Consultancy focuses on infrastructure development, engineering, and project management. The website features past and ongoing construction projects, showcasing expertise in building design, site planning, and sustainable architecture. It conveys professionalism, precision, and a commitment to structural excellence.",
-        link: "#",
+        description: "🏗️ GreatRiftConsultancyConstruction.com\n\nTechnologies: React.js, Node.js, MongoDB, Tailwind CSS\n\nA construction-focused website presenting the company’s infrastructure projects, portfolio, and engineering capabilities.\n\nThe platform emphasizes visual storytelling, using project galleries and detail pages to display construction achievements.\n\nFocused on UI/UX clarity, content architecture, and backend CMS integration.",
+        link: "https://davyken.github.io/GreatriftConsultancyConstruction.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400",
+        img: travelImg,
         title: "Great Rift Consultancy Travel",
-        description: "A vibrant and user-friendly travel website that connects users to unforgettable journeys and experiences. It offers destination guides, tour packages, and booking options for individuals and groups. Through a clean, visually rich interface, it communicates Great Rift Consultancy's goal of making travel seamless, inspiring, and accessible.",
-        link: "#",
+        description: "✈️ GreatRiftConsultancyTravel.com\n\nTechnologies: React.js, Node.js, Express.js, MongoDB\n\nA travel and tour booking platform for Great Rift Consultancy’s travel division.\n\nIt features trip listings, booking forms, travel guides, and destination highlights.\n\nBuilt for dynamic data handling, responsive layouts, and interactive booking experiences.",
+        link: "https://davyken.github.io/GreatriftConsultancyTravel.com/",
     },
     {
-        img: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400",
+        img: foundationImg,
         title: "Great Rift Foundation",
-        description: "The philanthropic wing of Great Rift Consultancy, this website presents the organization's humanitarian and community-driven initiatives. It features programs in education, health, and social development, offering visitors ways to donate, volunteer, and partner for change. The site reflects compassion, transparency, and the company's vision for a better, more inclusive future.",
-        link: "#",
+        description: "🤝 GreatRiftFoundation.com\n\nTechnologies: React.js, Node.js, MongoDB, Tailwind CSS\n\nA non-profit foundation website designed to communicate social impact and humanitarian initiatives.\n\nIt includes sections for programs, news, partnerships, and donations.\n\nFocused on accessibility, community engagement, and storytelling through design.\n\n🚀 Summary\n\nThrough these projects, I’ve gained strong practical experience in:\n\nFrontend: React.js, Next.js, Tailwind CSS, Vanilla JS\n\nBackend: Node.js, Express.js, NestJS\n\nDatabases: MongoDB, Supabase\n\nTools & APIs: JWT, Stripe, Cloudinary, Socket.io\n\nArchitecture: REST APIs, real-time communication, modular monoliths, and microservice patterns\n\nEach project reflects a balance of technical precision, clean design, and scalable architecture, tailored to solve specific business and user needs.",
+        link: "https://davyken.github.io/GreatriftFoundation.com/",
     },
 ];
 
