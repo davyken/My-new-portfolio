@@ -48,38 +48,78 @@ const worktimeline = [{
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Javascript",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "Flutter & spring boot",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "React native",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "NodeJS(express)",
+        value: 85,
     },
     {
-        name: "Jquery",
+        name: "NestJS",
+        value: 80,
+    },
+    {
+        name: "MongoDB",
+        value: 85,
+    },
+    {
+        name: "Supabase",
+        value: 80,
+    },
+    {
+        name: "Nextjs",
+        value: 85,
+    },
+    {
+        name: "MySql",
+        value: 80,
+    },
+    {
+        name: "socket.io",
+        value: 85,
+    },
+    {
+        name: "Learning management system (LMS)",
+        value: 80,
+    },
+    {
+        name: "Social Media management",
+        value: 85,
+    },
+    {
+        name: "DART & PHP",
+        value: 80,
+    },
+    {
+        name: "Canva & Capcut",
         value: 85,
     },
 ];
 
 const services = [{
         title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Craft intuitive and delightful digital experiences by marrying user research, information architecture, and thoughtful visual design. Our UI/UX design process focuses on usability, accessibility, and performance to create interfaces that feel effortless and empower users to accomplish their goals with confidence.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Fullstackdev",
+        description: "Designing mobile and web experiences that glide across devices and screen sizes. We prioritize performance, accessibility, and engaging interactions to turn complex tasks into simple, enjoyable journeys on iOS and Android.",
     },
     {
         title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Transform your WordPress presence with clean, responsive designs that honor your brand and content strategy. From theme customization to widget architecture and SEO-friendly layouts, we deliver fast, scalable sites that look great on every device.",
+    },
+     {
+        title: "Video Editing",
+        description: "Gives live to your pictures with my professional video editing services. Whether you need promotional videos, social media content, or personal projects, I bring creativity and technical expertise to craft compelling narratives that captivate your audience.",
     },
 ];
 
