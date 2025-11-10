@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
@@ -27,7 +28,7 @@ export const Portfolio = () => {
                 <h3 className="po_title">{data.title}</h3>
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  <Link to={`/portfolio/${i}`}>view project</Link>
                 </div>
               </div>
             );
