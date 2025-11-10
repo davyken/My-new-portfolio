@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
@@ -42,6 +42,9 @@ export const ProjectDetail = () => {
           <Col lg="8">
             <h1 className="display-4 mb-4"> {project.title} </h1>
             <hr className="t_border my-4 ml-0 text-left" />
+          </Col>
+          <Col lg="4" className="text-right">
+            <Link to="/portfolio" className="btn btn-secondary">Back</Link>
           </Col>
         </Row>
         <Row>
