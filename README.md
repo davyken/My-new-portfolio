@@ -1,6 +1,6 @@
 # Davy's Portfolio
 
-Welcome to my personal portfolio website! This is a React-based application showcasing my work as a full-stack developer.
+Welcome to my personal portfolio website! This is a React-based application showcasing my work as a full-stack developer,Graphic designer and video editor.
 
 ## About Me
 
