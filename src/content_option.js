@@ -145,7 +145,7 @@ const dataportfolio = [{
         img: recruitmentImg,
         title: "Recruitment Platform",
         description: "💼 Recruitment Platform\n\nTechnologies: React.js, Supabase, Node.js, Tailwind CSS\n\nA web-based recruitment and job-matching platform connecting candidates with employers.\n\nBuilt using React.js for the UI and Supabase for authentication, database management, and file storage. The app allows candidates to upload CVs, apply for jobs, and receive personalized recommendations.\n\nEmployers can post jobs, review applications, and manage listings through an intuitive dashboard.\n\nThis project demonstrates experience in modern backend-as-a-service (BaaS), authentication, and real-time database interactions.",
-        link: "https://github.com/davyken/Job-Fusion",
+        link: "https://job-fusion-jade.vercel.app/",
     },
     {
         img: canvasImg,
