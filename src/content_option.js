@@ -8,7 +8,7 @@ import logisticsImg from './assets/images/Screenshot from 2025-11-10 13-16-57.pn
 import constructionImg from './assets/images/Screenshot from 2025-11-10 13-15-33.png';
 import travelImg from './assets/images/Screenshot from 2025-11-10 13-10-41.png';
 import foundationImg from './assets/images/Screenshot from 2025-11-10 13-13-16.png';
-
+import hiremeImg from './assets/images/Screenshot from 2025-11-17 09-10-33.png';
 const logotext = "DAVY";
 const meta = {
     title: "Davy ",
@@ -31,19 +31,19 @@ const dataabout = {
     aboutme: "I'm a passionate full-stack developer with 3+ years of experience specializing in creating innovative web applications that solve real-world problems. My expertise lies in building modern, responsive, and user-centric applications using cutting-edge technologies.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Web developer and graphic designer",
+        where: "GreatriftFoundation",
+        date: "2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "web developer",
+        where: "Increasinf faith of christ ministry international",
+        date: "2025",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Fullstack developer",
+        where: "rebasecodecamp",
+        date: "2025",
     },
 ];
 
@@ -124,10 +124,22 @@ const services = [{
 ];
 
 const dataportfolio = [{
+        img: recruitmentImg,
+        title: "Job Fusion",
+        description: "💼 Recruitment Platform\n\nTechnologies: React.js, Supabase, Node.js, Tailwind CSS\n\nA web-based recruitment and job-matching platform connecting candidates with employers.\n\nBuilt using React.js for the UI and Supabase for authentication, database management, and file storage. The app allows candidates to upload CVs, apply for jobs, and receive personalized recommendations.\n\nEmployers can post jobs, review applications, and manage listings through an intuitive dashboard.\n\nThis project demonstrates experience in modern backend-as-a-service (BaaS), authentication, and real-time database interactions.",
+        link: "https://job-fusion-jade.vercel.app/",
+    },
+    {
         img: chatImg,
         title: "Chat Application",
         description: "🗨️ Chat Application\n\nTechnologies: React.js, Node.js, Express.js, MongoDB, Socket.io\n\nA real-time chat platform designed for smooth communication between users. The app supports instant messaging, user authentication, online/offline status detection, and message persistence using MongoDB.\n\nThe frontend, built in React.js, delivers a responsive interface with seamless chat transitions, while the backend (Node.js + Express + Socket.io) handles live connections and secure message delivery.\n\nThis project demonstrates expertise in real-time data handling, WebSockets, and secure fullstack architecture.",
         link: "https://github.com/davyken/chat-n",
+    },
+    {
+        img: hiremeImg,
+        title: "HireMe Recruitment Platform",
+        description: "💼 Hire Me Recruitment Platform\n\nTechnologies: React (Next.js), Node.js, Express.js, MongoDB, Auth0\n\nA comprehensive recruitment platform built with Next.js for the frontend, providing a seamless user experience for job seekers and employers. Integrated with Auth0 for secure authentication, allowing users to sign up, log in, and manage profiles.\n\nThe backend, powered by Node.js and Express.js, handles API endpoints for job postings, applications, and user management. MongoDB is used for storing user data, job listings, and application records.\n\nFeatures include job search and filtering, application tracking, employer dashboards, and real-time notifications. This project showcases full-stack development with modern authentication, database integration, and scalable architecture.",
+        link: "https://hire-me-mu-pied.vercel.app/",
     },
     {
         img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400",
@@ -142,12 +154,6 @@ const dataportfolio = [{
         link: "https://online-marketplace-client.onrender.com",
     },
     {
-        img: recruitmentImg,
-        title: "Recruitment Platform",
-        description: "💼 Recruitment Platform\n\nTechnologies: React.js, Supabase, Node.js, Tailwind CSS\n\nA web-based recruitment and job-matching platform connecting candidates with employers.\n\nBuilt using React.js for the UI and Supabase for authentication, database management, and file storage. The app allows candidates to upload CVs, apply for jobs, and receive personalized recommendations.\n\nEmployers can post jobs, review applications, and manage listings through an intuitive dashboard.\n\nThis project demonstrates experience in modern backend-as-a-service (BaaS), authentication, and real-time database interactions.",
-        link: "https://job-fusion-jade.vercel.app/",
-    },
-    {
         img: canvasImg,
         title: "Virtual Canvas Board",
         description: "🧠 Virtual Canvas Board\n\nTechnologies: Next.js, NestJS, MongoDB, WebSockets, Canvas API\n\nAn interactive whiteboard app that allows multiple users to draw, collaborate, and share in real time.\n\nThe frontend, built with Next.js, integrates the Canvas API for drawing tools, colors, and shapes, while the backend (NestJS + WebSockets) ensures real-time synchronization between users.\n\nThe project focuses on real-time event handling, state management, and collaborative UI synchronization, ideal for remote teamwork and brainstorming tools.",
@@ -156,7 +162,7 @@ const dataportfolio = [{
     {
         img: ifcmImg,
         title: "IFCM Website",
-        description: "🌐 IFCM Website\n\nTechnologies: HTML, CSS, JavaScript (Vanilla JS)\n\nA professional institutional website built with pure JavaScript, focusing on simplicity, lightweight performance, and accessibility.\n\nThe website includes dynamic sections, smooth scrolling, and responsive layouts — all implemented without frameworks.\n\nThis project demonstrates a strong command of core web technologies and frontend performance optimization.",
+        description: "🌐 IFCM Website\n\nTechnologies: Reactjs Tailwind CSS\n\nA professional institutional website built with pure JavaScript, focusing on simplicity, lightweight performance, and accessibility.\n\nThe website includes dynamic sections, smooth scrolling, and responsive layouts — all implemented without frameworks.\n\nThis project demonstrates a strong command of core web technologies and frontend performance optimization.",
         link: "https://ifcministriesintl.com/",
     },
     {
