@@ -6,6 +6,7 @@
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
+    --primary-color-hex: #6c5ce7;
 }
 
 [data-theme="light"] {
@@ -18,9 +19,54 @@
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
+/* PWA Mobile Optimizations */
 html,
 body {
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: none;
+    }
+    
+    body {
+        padding-top: 0;
+        border: none;
+    }
+    
+    /* Remove fixed borders on mobile */
+    .br-top, .br-bottom, .br-left, .br-right {
+        display: none;
+    }
+    
+    /* Touch-friendly tap targets */
+    button, 
+    .nav-tab,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Prevent text selection on UI elements */
+    .nav-tab,
+    .navbar-brand,
+    button {
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    /* Disable callout on iOS */
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 body {

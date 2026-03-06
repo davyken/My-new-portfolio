@@ -4,14 +4,41 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="Davy-logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#6c5ce7" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Davy Portfolio" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="author" content="Davyken">
+    <meta name="description" content="Davy - Fullstack Developer Portfolio showcasing projects, skills, and certifications">
+    <meta name="keywords" content="portfolio, developer, web developer, react, nodejs, fullstack">
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
+    <title>Davy - Developer Portfolio</title>
+    
+    <style>
+        /* Prevent overscroll/bounce effect on iOS */
+        html, body {
+            overscroll-behavior: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Safe area padding for notched devices */
+        body {
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+    </style>
 </head>
 
 <body>
