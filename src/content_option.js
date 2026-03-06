@@ -1,4 +1,6 @@
-import chatImg from './assets/images/Screenshot from 2025-11-10 12-54-42.png';
+import chatImg from './assets/images/chatdavweb.png';
+import swiftdropImg from './assets/images/swiftdrop.png';
+import carrentalImg from './assets/images/carrental.png';
 import recruitmentImg from './assets/images/Screenshot from 2025-08-28 13-59-15.png';
 import canvasImg from './assets/images/canvas.png';
 import ifcmImg from './assets/images/Screenshot from 2025-11-10 13-07-13.png';
@@ -9,6 +11,7 @@ import constructionImg from './assets/images/Screenshot from 2025-11-10 13-15-33
 import travelImg from './assets/images/Screenshot from 2025-11-10 13-10-41.png';
 import foundationImg from './assets/images/Screenshot from 2025-11-10 13-13-16.png';
 import hiremeImg from './assets/images/Screenshot from 2025-11-17 09-10-33.png';
+import davyImg from './assets/images/davy111.jpeg';
 const logotext = "DAVY";
 const meta = {
     title: "Davy ",
@@ -23,7 +26,7 @@ const introdata = {
         third: "I develop mobile apps",
     },
     description: "I'm a passionate full-stack developer with 3+ years of experience specializing in creating innovative web applications that solve real-world problems. My expertise lies in building modern, responsive, and user-centric applications using cutting-edge technologies.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: davyImg,
 };
 
 const dataabout = {
@@ -133,7 +136,19 @@ const dataportfolio = [{
         img: chatImg,
         title: "Chat Application",
         description: "🗨️ Chat Application\n\nTechnologies: React.js, Node.js, Express.js, MongoDB, Socket.io\n\nA real-time chat platform designed for smooth communication between users. The app supports instant messaging, user authentication, online/offline status detection, and message persistence using MongoDB.\n\nThe frontend, built in React.js, delivers a responsive interface with seamless chat transitions, while the backend (Node.js + Express + Socket.io) handles live connections and secure message delivery.\n\nThis project demonstrates expertise in real-time data handling, WebSockets, and secure fullstack architecture.",
-        link: "https://github.com/davyken/chat-n",
+        link: "https://chatdav-2aa5.vercel.app/",
+    },
+    {
+        img: swiftdropImg,
+        title: "SwiftDrop",
+        description: "📦 SwiftDrop - Delivery Management System\n\nTechnologies: React.js, Node.js, Express.js, MongoDB\n\nA comprehensive delivery management platform for tracking packages, managing deliveries, and handling customer requests.\n\nFeatures include real-time tracking, delivery status updates, customer notifications, and an intuitive dashboard for managing deliveries.\n\nThis project demonstrates full-stack development skills with focus on logistics and real-time updates.",
+        link: "https://davyken.github.io/swiftdrop/",
+    },
+    {
+        img: carrentalImg,
+        title: "Car Rental",
+        description: "🚗 Car Rental Platform\n\nTechnologies: React.js, Node.js, Express.js, MongoDB\n\nA modern car rental platform allowing users to browse available vehicles, make reservations, and manage their bookings.\n\nFeatures include vehicle catalog with filters, booking management, user authentication, and payment integration.\n\nThis project showcases e-commerce functionality and booking system development.",
+        link: "https://carrental-black-pi.vercel.app/",
     },
     {
         img: hiremeImg,

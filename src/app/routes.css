@@ -1,0 +1,14 @@
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--bg-color);
+    border-top: 1px solid var(--text-color);
+    margin-top: 50px;
+}
+
+.site-footer p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}

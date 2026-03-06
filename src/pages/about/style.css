@@ -98,3 +98,400 @@
         transform: translateZ(0);
     }
 }
+
+/* 3D Tech Logos with Shaking Animation */
+.tech-logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.tech-logo-3d {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: shake3d 2s ease-in-out infinite;
+    box-shadow: 
+        0 6px 0 rgba(0,0,0,0.3),
+        0 10px 20px rgba(0,0,0,0.2),
+        inset 0 -4px 0 rgba(0,0,0,0.2),
+        inset 0 4px 0 rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.tech-logo-3d:hover {
+    transform: translateY(-5px) rotateX(10deg) rotateY(-10deg);
+    animation: none;
+}
+
+.tech-logo-3d:active {
+    transform: translateY(4px);
+    box-shadow: 
+        0 2px 0 rgba(0,0,0,0.3),
+        0 4px 10px rgba(0,0,0,0.2),
+        inset 0 -2px 0 rgba(0,0,0,0.2),
+        inset 0 2px 0 rgba(255,255,255,0.2);
+}
+
+.tech-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        2px 2px 0 rgba(0,0,0,0.3),
+        -1px -1px 0 rgba(255,255,255,0.2);
+    font-family: 'Arial Black', sans-serif;
+}
+
+.tech-logo-3d.js-logo .tech-logo-text,
+.tech-logo-3d[style*="f7df1e"] .tech-logo-text,
+.tech-logo-3d[style*="61dafb"] .tech-logo-text,
+.tech-logo-3d[style*="3ecf8e"] .tech-logo-text {
+    color: #000;
+    text-shadow: 
+        1px 1px 0 rgba(255,255,255,0.3),
+        -1px -1px 0 rgba(0,0,0,0.1);
+}
+
+@keyframes shake3d {
+    0%, 100% {
+        transform: translateY(0) rotateX(0) rotateY(0);
+    }
+    10% {
+        transform: translateY(-3px) rotateX(5deg) rotateY(-5deg);
+    }
+    20% {
+        transform: translateY(3px) rotateX(-5deg) rotateY(5deg);
+    }
+    30% {
+        transform: translateY(-2px) rotateX(3deg) rotateY(-3deg);
+    }
+    40% {
+        transform: translateY(2px) rotateX(-3deg) rotateY(3deg);
+    }
+    50% {
+        transform: translateY(-1px) rotateX(2deg) rotateY(-2deg);
+    }
+    60% {
+        transform: translateY(1px) rotateX(-2deg) rotateY(2deg);
+    }
+    70% {
+        transform: translateY(-1px) rotateX(1deg) rotateY(-1deg);
+    }
+    80% {
+        transform: translateY(1px) rotateX(-1deg) rotateY(1deg);
+    }
+    90% {
+        transform: translateY(0) rotateX(0) rotateY(0);
+    }
+}
+
+/* Work Experience Boxes */
+.work-experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-box {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--bg-color);
+    border-left: 4px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.work-box-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.company-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.work-box-content h4 {
+    margin: 0 0 5px 0;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.work-role {
+    margin: 0;
+    color: var(--text-color-2);
+    font-size: 0.95rem;
+}
+
+.work-description {
+    margin: 5px 0;
+    color: var(--text-color-2);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.work-year {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.work-box-content h4 {
+    margin: 0 0 5px 0;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.work-role {
+    margin: 0;
+    color: var(--text-color-2);
+    font-size: 0.95rem;
+}
+
+.work-year {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.work-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cert-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cert-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.cert-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 15px;
+    color: white;
+    font-size: 0.85rem;
+}
+
+/* Certificate Modal */
+.cert-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 20px;
+}
+
+.cert-modal-content {
+    position: relative;
+    max-width: 500px;
+    max-height: 90%;
+    background: var(--bg-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cert-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-modal-close:hover {
+    background: var(--primary-color);
+}
+
+.cert-modal-image {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    display: block;
+}
+
+.cert-modal-info {
+    padding: 20px;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+.cert-modal-info h4 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.cert-modal-info p {
+    margin: 5px 0 0;
+    color: var(--text-color-2);
+}
+
+.cert-box {
+    padding: 0;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.cert-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.cert-icon {
+    font-size: 2rem;
+}
+
+.cert-content h4 {
+    margin: 0 0 3px 0;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.cert-content p {
+    margin: 0;
+    color: var(--text-color-2);
+    font-size: 0.85rem;
+}
+
+.cert-content span {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.cert-iframe {
+    display: none;
+}
+
+.cert-icon {
+    font-size: 2rem;
+}
+
+.cert-content h4 {
+    margin: 0 0 3px 0;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.cert-content p {
+    margin: 0;
+    color: var(--text-color-2);
+    font-size: 0.85rem;
+}
+
+.cert-content span {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Show More Button */
+.show-more-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color-2);
+}

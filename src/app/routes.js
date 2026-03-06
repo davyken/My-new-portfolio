@@ -7,29 +7,32 @@ import { ProjectDetail } from "../pages/portfolio/ProjectDetail";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import "./routes.css";
+
+// Combined Landing Page with all sections
+const LandingPage = () => {
+  return (
+    <>
+      <Home />
+      <Portfolio />
+      <About />
+      <ContactUs />
+      <footer className="site-footer">
+        <p>Made with ❤️ by davykennang</p>
+      </footer>
+    </>
+  );
+};
 
 const AnimatedRoutes = withRouter(({ location }) => (
-  <TransitionGroup>
-    <CSSTransition
-      key={location.key}
-      timeout={{
-        enter: 400,
-        exit: 400,
-      }}
-      classNames="page"
-      unmountOnExit
-    >
-      <Routes location={location}>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/:id" element={<ProjectDetail />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </CSSTransition>
-  </TransitionGroup>
+  <Routes location={location}>
+    <Route exact path="/" element={<LandingPage />} />
+    <Route path="/about" element={<LandingPage />} />
+    <Route path="/portfolio" element={<LandingPage />} />
+    <Route path="/portfolio/:id" element={<ProjectDetail />} />
+    <Route path="/contact" element={<LandingPage />} />
+    <Route path="*" element={<LandingPage />} />
+  </Routes>
 ));
 
 function AppRoutes() {
