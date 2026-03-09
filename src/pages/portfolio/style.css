@@ -1,7 +1,7 @@
 .po_items_ho {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 0.5rem;
     justify-content: center;
     width: 100%;
     max-width: 1800px;
@@ -56,15 +56,15 @@
 }
 
 .po_item {
-    width: 32%;
-    min-height: 550px;
+    width: 48%;
+    min-height: 900px;
     max-width: none;
     flex-grow: 0;
     flex-shrink: 0;
     text-align: center;
-    margin: 8px;
+    margin: 5px;
     background: var(--bg-color);
-    padding: 15px;
+    padding: 35px;
     transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
     display: flex;
     flex-direction: column;
@@ -78,23 +78,24 @@
 /* Responsive */
 @media (max-width: 1500px) {
     .po_item {
-        width: 31%;
+        width: 48%;
     }
 }
 
 @media (max-width: 1100px) {
     .po_item {
-        width: 48%;
+        width: 100%;
     }
 }
 
 @media (max-width: 700px) {
     .po_item {
         width: 100%;
+        min-height: 700px;
     }
     
     .po_item img {
-        height: 300px;
+        height: 400px;
     }
 }
 
@@ -124,10 +125,12 @@
 
 .po_item img {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
     border-radius: 12px;
     transition: transform 0.5s ease, filter 0.5s ease;
+    background: var(--bg-color-2);
 }
 
 .po_item:hover img {
@@ -202,8 +205,8 @@
 }
 
 .po_title {
-    font-size: 1.3rem;
-    margin: 10px 0 5px 0;
+    font-size: 1.5rem;
+    margin: 12px 0 6px 0;
     color: var(--text-color);
     font-weight: bold;
     flex-shrink: 0;
@@ -258,7 +261,7 @@
 /* Show More Button */
 .portfolio-show-more {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .portfolio-show-more .show-more-btn {
@@ -285,22 +288,25 @@
 /* Responsive */
 @media (max-width: 1400px) {
     .po_item {
-        width: calc(33.333% - 20px);
+        width: calc(48% - 10px);
+        min-height: 850px;
     }
 }
 
 @media (max-width: 1000px) {
     .po_item {
-        width: calc(50% - 20px);
+        width: calc(100% - 10px);
+        min-height: 800px;
     }
 }
 
 @media (max-width: 600px) {
     .po_item {
         width: 100%;
+        min-height: 700px;
     }
     
     .po_item img {
-        height: 350px;
+        height: 400px;
     }
 }
