@@ -12,6 +12,7 @@ import foundationImg from './assets/images/Screenshot from 2025-11-10 13-13-16.p
 import hiremeImg from './assets/images/Screenshot from 2025-11-17 09-10-33.png';
 import recipesImg from './assets/images/recipes.png';
 import davyImg from './assets/images/davy111.jpeg';
+import liveCodingImg from './assets/images/live-coding.png';
 const logotext = "DAVY";
 const meta = {
     title: "Davy ",
@@ -127,6 +128,12 @@ const services = [{
 ];
 
 const dataportfolio = [{
+        img: liveCodingImg,
+        title: "Live Coding Platform",
+        description: "Live Coding Invigilation Platform. Technologies: React.js, Node.js, Express.js, MongoDB, Clerk Authentication, Socket.io. A real-time live coding platform where students can solve algorithms while being invigilated. The platform enables screen sharing between students and invigilators, with a built-in code editor for solving algorithmic problems. Features include: Real-time screen sharing for invigilation, Integrated code editor for algorithm solving, Live session management between students and invigilators, Secure authentication using Clerk, Problem database with algorithm challenges, Session history and progress tracking. This project demonstrates expertise in real-time WebSocket communication, secure authentication integration, and collaborative coding environments.",
+        link: "https://live-coding-gray.vercel.app/",
+    },
+    {
         img: recipesImg,
         title: "Recipe App",
         description: "Recipe App - Full-Stack Recipe Discovery Platform. Technologies: React 19, React Native (Expo), Node.js, Express, Drizzle ORM, PostgreSQL, Clerk Auth, TheMealDB API, Google Places API. A comprehensive recipe discovery, sharing, and saving application with both web and mobile versions. Web Features: Browse thousands of recipes from TheMealDB, Search by name category or area, View detailed recipe instructions ingredients and images, User registration with Clerk Authentication (OAuth email password), Create edit and delete personal recipes, Save favorite recipes and view history, Find nearby restaurants using Google Places API. Mobile Features (React Native plus Expo): Cross-platform iOS and Android support, Tab-based navigation, Recipe creation with Cloudinary image upload, Favorites management, Profile management. Backend: Node.js with Express, Drizzle ORM with PostgreSQL, JWT Authentication, RESTful API architecture. Deployed at: https://dav-recipes-web.vercel.app/",
