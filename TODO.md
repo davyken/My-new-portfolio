@@ -28,5 +28,4 @@
 1. Test responsive behavior on mobile/tablet/desktop
 2. Verify smooth scrolling works
 3. Check accessibility (semantic tags, alt text, heading hierarchy)
-4. Run development server to verify
 
