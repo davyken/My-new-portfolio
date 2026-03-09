@@ -1,5 +1,9 @@
 // Service Worker for PWA
 const CACHE_NAME = 'davy-portfolio-v1';
+
+// Workbox manifest placeholder - required for react-scripts build
+const manifest = self.__WB_MANIFEST;
+
 const urlsToCache = [
   '/',
   '/index.html',
