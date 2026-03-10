@@ -98,23 +98,36 @@
     height: 100%;
 }
 
-/* Responsive navigation */
+/* Responsive navigation - Bottom Tab Bar for Mobile */
 @media (max-width: 768px) {
+    body {
+        padding-bottom: 70px !important;
+    }
+    
     .site__header {
-        top: 0;
+        top: auto !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
         padding: 0;
         background-color: var(--bg-color) !important;
-        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+        z-index: 99999;
+        border-top: 2px solid var(--primary-color);
     }
     
     .header-container {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0;
-        padding: 10px;
+        padding: 10px 5px;
+        justify-content: space-between;
+        max-width: 100%;
+        position: relative;
+        align-items: center;
     }
     
     .navbar-brand {
-        display: none;
+        display: none !important;
     }
     
     .navbar__tabs {
@@ -122,46 +135,112 @@
         position: static;
         transform: none;
         order: 0;
-        width: 100%;
+        width: 85%;
         justify-content: space-around;
         margin-top: 0;
-        padding: 10px 0;
+        padding: 0;
     }
     
     .nav-tab {
-        font-size: 0.75rem;
-        padding: 8px 12px;
+        font-size: 0;
+        padding: 8px 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4px;
+        min-width: 55px;
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+    
+    .nav-tab:hover {
+        background: rgba(108, 92, 231, 0.1);
     }
     
     .nav-tab::before {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        display: inline-block;
     }
     
-    .nav-tab[onclick*="Home"]::before {
-        content: "🏠";
+    .nav-tab[data-page="home"]::before {
+        content: "\f015";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
     }
     
-    .nav-tab[onclick*="portfolio"]::before {
-        content: "💼";
+    .nav-tab[data-page="portfolio"]::before {
+        content: "\f4fe";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
     }
     
-    .nav-tab[onclick*="about"]::before {
-        content: "👤";
+    .nav-tab[data-page="about"]::before {
+        content: "\f007";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
     }
     
-    .nav-tab[onclick*="contact"]::before {
-        content: "✉️";
+    .nav-tab[data-page="contact"]::before {
+        content: "\f0e0";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+    }
+    
+    .nav-tab span {
+        display: none;
     }
     
     .nav_ac {
-        display: none;
+        display: none !important;
     }
     
     .themetoggle {
-        display: none;
+        display: flex !important;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-width: 40px;
+        height: 40px;
+    }
+    
+    .themetoggle i {
+        font-size: 1.3rem;
+        color: var(--text-color);
+    }
+    
+    .themetoggle:hover i {
+        color: var(--primary-color);
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .nav-tab {
+        padding: 6px 10px;
+        min-width: 50px;
+    }
+    
+    .nav-tab::before {
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktop styles */
+.site__header {
+    top: 10px;
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .nav-tab {
+        font-size: 0.55rem;
+        padding: 4px 5px;
+        min-width: 40px;
+    }
+    
+    .nav-tab::before {
+        font-size: 0.9rem;
     }
 }
