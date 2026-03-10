@@ -31,6 +31,24 @@ const techLogos = [
   { name: "Socket.io", color: "#010101", icon: "IO" },
 ];
 
+// Skill logo mapping with icons and colors
+const skillLogos = {
+  "Javascript": { icon: "fab fa-js", color: "#f7df1e" },
+  "Flutter & spring boot": { icon: "fab fa-flutter", color: "#02569b", text: "Flutter" },
+  "React native": { icon: "fab fa-react", color: "#61dafb" },
+  "NodeJS(express)": { icon: "fab fa-node-js", color: "#339933" },
+  "NestJS": { icon: "fas fa-egg", color: "#e0234e", text: "NestJS" },
+  "MongoDB": { icon: "fas fa-leaf", color: "#47a248" },
+  "Supabase": { icon: "fas fa-server", color: "#3ecf8e", text: "Supabase" },
+  "Nextjs": { icon: "fab fa-nextjs", color: "#ffffff", text: "Next.js" },
+  "MySql": { icon: "fas fa-server", color: "#4479a1", text: "MySQL" },
+  "socket.io": { icon: "fas fa-plug", color: "#010101", text: "Socket.io" },
+  "Learning management system (LMS)": { icon: "fas fa-graduation-cap", color: "#6c5ce7" },
+  "Social Media management": { icon: "fas fa-share-nodes", color: "#00cec9" },
+  "DART & PHP": { icon: "fab fa-php", color: "#777bb4", text: "DART/PHP" },
+  "Canva & Capcut": { icon: "fas fa-pen-nib", color: "#fd79a8" },
+};
+
 // Work experience data with company info
 const workExperience = [
   {
@@ -80,7 +98,7 @@ const certifications = [
 
 export const About = () => {
   const [showAllSkills, setShowAllSkills] = useState(false);
-  const visibleSkills = showAllSkills ? skills : skills.slice(0, 5);
+  const visibleSkills = showAllSkills ? skills : skills.slice(0, 6);
   const [selectedCert, setSelectedCert] = useState(null);
   
   // Close modal on Escape key
@@ -179,6 +197,46 @@ export const About = () => {
                   )}
                 </div>
               ))}
+            </div>
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Skills</h3>
+          </Col>
+          <Col lg="7">
+            <div className="skills-container">
+              {visibleSkills.map((skill, index) => {
+                const skillInfo = skillLogos[skill.name] || { icon: "fas fa-code", color: "#6c5ce7" };
+                return (
+                  <div key={index} className="skills-item">
+                    <div className="skills-info">
+                      <span className="skills-name">
+                        <i className={skillInfo.icon} style={{ color: skillInfo.color, marginRight: '8px' }}></i>
+                        {skillInfo.text || skill.name}
+                      </span>
+                      <span className="skills-value">{skill.value}%</span>
+                    </div>
+                    <div className="skills-progress-bg">
+                      <div 
+                        className="skills-progress-bar" 
+                        style={{ 
+                          width: `${skill.value}%`,
+                          background: `linear-gradient(90deg, ${skillInfo.color} 0%, ${skillInfo.color}88 100%)`
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                );
+              })}
+              {skills.length > 6 && (
+                <button 
+                  className="show-more-skills"
+                  onClick={() => setShowAllSkills(!showAllSkills)}
+                >
+                  {showAllSkills ? 'Show Less' : `Show More (${skills.length - 6} more)`}
+                </button>
+              )}
             </div>
           </Col>
         </Row>

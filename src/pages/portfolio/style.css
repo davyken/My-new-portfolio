@@ -57,7 +57,7 @@
 
 .po_item {
     width: 48%;
-    min-height: 900px;
+    /* min-height: 500px; */
     max-width: none;
     flex-grow: 0;
     flex-shrink: 0;
